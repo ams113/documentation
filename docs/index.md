@@ -4,9 +4,27 @@ Documentation and libraries to carry out a test environment in our React project
 ## Dependencies React 17
 Installation npm or yarn packages
 
-* `npm install --save-dev @wojtekmaj/enzyme-adapter-react-17` OR ` yarn add --dev @wojtekmaj/enzyme-adapter-react-17` - enzyme-adapter-react-17
-* `npm install --save-dev enzyme-to-json` OR `yarn add --dev enzyme-to-json` - enzyme-to-json
-* `npm install "@testing-library/react-hooks" --save-dev` OR `yarn add --dev @testing-library/react-hooks` - react-hooks-testing-library
+*  enzyme-adapter-react-17
+```
+    # if you're using npm
+    npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+    # if you're using yarn
+    yarn add --dev @wojtekmaj/enzyme-adapter-react-17
+```
+* enzyme-to-json
+```
+    # if you're using npm
+    npm install --save-dev enzyme-to-json
+    # if you're using yarn
+    yarn add --dev enzyme-to-json
+```
+* react-hooks-testing-library
+```
+    # if you're using npm
+    `npm install "@testing-library/react-hooks" --save-dev
+    # if you're using yarn
+    yarn add --dev @testing-library/react-hooks
+```
 
 
 ## Documentation
@@ -28,7 +46,7 @@ Installation npm or yarn packages
 
 
 ## Configuration
-Example configuration test environment in *setupTests.js*
+Example configuration test environment in *src/setupTests.js*
 
 ```
 import Enzyme from 'enzyme';
