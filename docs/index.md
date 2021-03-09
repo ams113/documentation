@@ -21,18 +21,23 @@ Installation npm or yarn packages
 * react-hooks-testing-library
 ```
     # if you're using npm
-    `npm install "@testing-library/react-hooks" --save-dev
+    npm install "@testing-library/react-hooks" --save-dev
     # if you're using yarn
     yarn add --dev @testing-library/react-hooks
 ```
 
 
 ## Documentation
-* **Jest** - JavaScript Testing Framework, It's de runner. **Site:**  [jestjs.io](https://jestjs.io/).
-* **Enzyme** - JavaScript Testing utility that makes it easier to test your Components. **Site:**  [enzymejs.github](https://enzymejs.github.io/enzyme/).
-* **enzyme-adapter-react-17** - Provisional adapter react 17 to works enzyme. **Site:** [adapter](https://github.com/wojtekmaj/enzyme-adapter-react-17).
-* **enzyme-to-json** - Convert Enzyme wrappers to a format compatible with Jest snapshot testing. **Site:** [adapter](https://github.com/adriantoine/enzyme-to-json).
-* **React Hooks Testing Library** - Simple and complete React hooks testing utilities that encourage good testing practices.. **Site:** [react-hooks-testing-library.com](https://react-hooks-testing-library.com/).
+* **Jest** - JavaScript Testing Framework, It's de runner. 
+    * **Site:**  [jestjs.io](https://jestjs.io/).
+* **Enzyme** - JavaScript Testing utility that makes it easier to test your Components. 
+    * **Site:**  [enzymejs.github](https://enzymejs.github.io/enzyme/).
+* **enzyme-adapter-react-17** - Provisional adapter react 17 to works enzyme. 
+    * **Site:** [adapter](https://github.com/wojtekmaj/enzyme-adapter-react-17).
+* **enzyme-to-json** - Convert Enzyme wrappers to a format compatible with Jest snapshot testing. 
+    * **Site:** [adapter](https://github.com/adriantoine/enzyme-to-json).
+* **React Hooks Testing Library** - Simple and complete React hooks testing utilities that encourage good testing practices.. 
+    * **Site:** [react-hooks-testing-library.com](https://react-hooks-testing-library.com/).
 
 
 ## Project layout
