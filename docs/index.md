@@ -51,7 +51,7 @@ Installation npm or yarn packages
 
 
 ## Configuration
-Example configuration test environment in *src/setupTests.js*
+Example configuration test environment in */src/setupTests.js*
 
 ```
 import Enzyme from 'enzyme';
@@ -68,6 +68,4 @@ expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
 
 * `yarn test` - Run suite test
 
-# React Hooks
-Documentation and libraries to carry out a test environment in our React project
 
