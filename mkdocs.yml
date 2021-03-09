@@ -1,7 +1,5 @@
 site_name: Docs ToniMtz
-
 nav:
-  React testing: index.md
-  React Hooks: hooks.md
-
-theme: solar
+  - React testing: index.md
+  - React Hooks: hooks.md
+theme: flatly

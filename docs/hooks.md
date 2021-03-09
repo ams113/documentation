@@ -5,9 +5,9 @@
 
 * No llames Hooks dentro de ciclos, condicionales o funciones anidadas
 
-## Reducer Hook
+### Reducer Hook
 
-### ¿Qué es un reducer?
+**¿Qué es un reducer?**
 
 * Es una función común y corriente.
 * Debe de ser un función pura ( Todo lo que esta función realice se resulve de forma interna ).
