@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Docs ToniMtz</title>
-        <link href="/css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>React Hooks - Docs ToniMtz</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/.">Docs ToniMtz</a>
+                    <a class="navbar-brand" href="..">Docs ToniMtz</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -47,10 +47,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li >
-                                <a href="/.">React testing</a>
+                                <a href="..">React testing</a>
                             </li>
-                            <li >
-                                <a href="/hooks/">React Hooks</a>
+                            <li class="active">
+                                <a href="./">React Hooks</a>
                             </li>
                         </ul>
 
@@ -60,21 +60,52 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#react-hooks">React Hooks</a></li>
+            <li><a href="#reglas-de-los-hooks">Reglas de los Hooks</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
-
-
+<h1 id="react-hooks">React Hooks</h1>
+<p><a href="https://es.reactjs.org/docs/hooks-intro.html">Hooks</a> son una nueva característica en React 16.8. Estos te permiten usar el estado y otras características de React sin escribir una clase.</p>
+<h2 id="reglas-de-los-hooks">Reglas de los <a href="https://es.reactjs.org/docs/hooks-rules.html">Hooks</a></h2>
+<ul>
+<li>No llames Hooks dentro de ciclos, condicionales o funciones anidadas</li>
+</ul>
+<h3 id="reducer-hook">Reducer Hook</h3>
+<p><strong>¿Qué es un reducer?</strong></p>
+<ul>
+<li>Es una función común y corriente.</li>
+<li>Debe de ser un función pura ( Todo lo que esta función realice se resulve de forma interna ).</li>
+<li>Debe de retornar un nuevo estado.</li>
+<li>Recibe 2 argumentos: el valor inicial (initialState) y la acción a ejecutar.</li>
+</ul>
+<p>Función pura:</p>
+<ul>
+<li>No debe de tener efectos secundaios. Debe de resolver la lógica de la función sin ayuda de otras funciones.</li>
+<li>No debe de tener tareas asíncronas.</li>
+<li>Debe de retornar siempre un estado nuevo.</li>
+<li>No debe de llamar al <em>locaStorage</em> o <em>sessionStorage</em></li>
+<li>No debe de requerir más de una acción, esta acción puede tener o no argumentos.</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
@@ -82,11 +113,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/",
+            var base_url = "..",
                 shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">

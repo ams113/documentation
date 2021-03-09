@@ -8,11 +8,11 @@
         
         
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My Docs</title>
+        <title>Docs ToniMtz</title>
         <link href="css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -32,11 +32,27 @@
 
                 <!-- Collapsed navigation -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href=".">My Docs</a>
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">Docs ToniMtz</a>
                 </div>
 
                 <!-- Expanded navigation -->
                 <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">React testing</a>
+                            </li>
+                            <li >
+                                <a href="hooks/">React Hooks</a>
+                            </li>
+                        </ul>
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -44,6 +60,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="hooks/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -67,16 +93,54 @@
 <h2 id="dependencies-react-17">Dependencies React 17</h2>
 <p>Installation npm or yarn packages</p>
 <ul>
-<li><code>npm install --save-dev @wojtekmaj/enzyme-adapter-react-17</code> - enzyme-adapter-react-17</li>
-<li><code>npm install --save-dev enzyme-to-json</code> - enzyme-to-json</li>
-<li><code>npm install "@testing-library/react-hooks" --save-dev</code> - react-hooks-testing-library</li>
+<li>enzyme-adapter-react-17</li>
 </ul>
+<pre><code>    # if you're using npm
+    npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+    # if you're using yarn
+    yarn add --dev @wojtekmaj/enzyme-adapter-react-17
+</code></pre>
+
+<ul>
+<li>enzyme-to-json</li>
+</ul>
+<pre><code>    # if you're using npm
+    npm install --save-dev enzyme-to-json
+    # if you're using yarn
+    yarn add --dev enzyme-to-json
+</code></pre>
+
+<ul>
+<li>react-hooks-testing-library</li>
+</ul>
+<pre><code>    # if you're using npm
+    npm install &quot;@testing-library/react-hooks&quot; --save-dev
+    # if you're using yarn
+    yarn add --dev @testing-library/react-hooks
+</code></pre>
+
 <h2 id="documentation">Documentation</h2>
 <ul>
-<li><strong>Jest</strong> - JavaScript Testing Framework, It's de runner. <strong>Site:</strong>  <a href="https://jestjs.io/">jestjs.io</a>.</li>
-<li><strong>Enzyme</strong> - JavaScript Testing utility that makes it easier to test your Components. <strong>Site:</strong>  <a href="https://enzymejs.github.io/enzyme/">enzymejs.github</a>.</li>
-<li><strong>enzyme-adapter-react-17</strong> - Provisional adapter react 17 to works enzyme. <strong>Site:</strong> <a href="https://github.com/wojtekmaj/enzyme-adapter-react-17">adapter</a>.</li>
-<li><strong>React Hooks Testing Library</strong> - Simple and complete React hooks testing utilities that encourage good testing practices.. <strong>Site:</strong> <a href="https://react-hooks-testing-library.com/">react-hooks-testing-library.com</a>.</li>
+<li><strong>Jest</strong> - JavaScript Testing Framework, It's de runner. <ul>
+<li><strong>Site:</strong>  <a href="https://jestjs.io/">jestjs.io</a>.</li>
+</ul>
+</li>
+<li><strong>Enzyme</strong> - JavaScript Testing utility that makes it easier to test your Components. <ul>
+<li><strong>Site:</strong>  <a href="https://enzymejs.github.io/enzyme/">enzymejs.github</a>.</li>
+</ul>
+</li>
+<li><strong>enzyme-adapter-react-17</strong> - Provisional adapter react 17 to works enzyme. <ul>
+<li><strong>Site:</strong> <a href="https://github.com/wojtekmaj/enzyme-adapter-react-17">adapter</a>.</li>
+</ul>
+</li>
+<li><strong>enzyme-to-json</strong> - Convert Enzyme wrappers to a format compatible with Jest snapshot testing. <ul>
+<li><strong>Site:</strong> <a href="https://github.com/adriantoine/enzyme-to-json">adapter</a>.</li>
+</ul>
+</li>
+<li><strong>React Hooks Testing Library</strong> - Simple and complete React hooks testing utilities that encourage good testing practices.. <ul>
+<li><strong>Site:</strong> <a href="https://react-hooks-testing-library.com/">react-hooks-testing-library.com</a>.</li>
+</ul>
+</li>
 </ul>
 <h2 id="project-layout">Project layout</h2>
 <pre><code>...                     # Other proyect folder and other files.         
@@ -88,7 +152,7 @@ src/                    # Components and props
     ...                 # Other foldesrs and other files.
 </code></pre>
 <h2 id="configuration">Configuration</h2>
-<p>Example configuration test environment in <em>setupTests.js</em></p>
+<p>Example configuration test environment in <em>/src/setupTests.js</em></p>
 <pre><code>import Enzyme from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
@@ -185,5 +249,5 @@ expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2021-03-04 11:31:52
+Build Date UTC : 2021-03-09 11:39:50
 -->
