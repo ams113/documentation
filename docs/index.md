@@ -5,7 +5,7 @@ Documentation and libraries to carry out a test environment in our React project
 Installation npm or yarn packages`
 
 * Enzyme: 
-`npm i --save-dev enzyme enzyme-adapter-react-16`
+`yarn add --dev enzyme`
 
 *  enzyme-adapter-react-17
 ```
