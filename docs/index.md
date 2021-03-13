@@ -2,7 +2,10 @@
 Documentation and libraries to carry out a test environment in our React project
 
 ## Dependencies React 17
-Installation npm or yarn packages
+Installation npm or yarn packages`
+
+* Enzyme: 
+`npm i --save-dev enzyme enzyme-adapter-react-16`
 
 *  enzyme-adapter-react-17
 ```
